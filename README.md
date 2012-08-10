@@ -4,6 +4,9 @@ Installation:
 2. http://deineurl.de/install.php aufrufen!
 3. install.php und install.sql löschen oder umbenennen!
 
+Login erfolgt mit
+Username: admin
+Passwort: test
 
 
 Konfiguration - Stunden / Minuten:
