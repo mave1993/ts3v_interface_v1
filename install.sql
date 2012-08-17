@@ -93,8 +93,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Daten für Tabelle `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `email`, `password`, `admin`, `b_email`, `b_sms`, `handy`, `lastlogin`) VALUES
-(2, 'admin', 'admin@admin.de', '098f6bcd4621d373cade4e832627b4f6', '1', '1', '1', '01624185161', '1344272742');
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

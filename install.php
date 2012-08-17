@@ -35,6 +35,20 @@
     <td><?php if ( @is_writeable ( 'backup/' ) ) { echo '<font color="#40aa00"><b>Schreibbar</b></font>'; } else { echo '<font color="#FF0000"><b>nicht Schreibbar</b>'; } ?></td>
   </tr>
   <tr>
+    <td>Admin Username </td>
+    <td><label>
+      <input type="text" name="user" />
+    </label></td>
+  </tr>
+  <tr>
+    <td>Admin Passwort </td>
+    <td><input type="text" name="pw" /></td>
+  </tr>
+  <tr>
+    <td>Admin E-Mail </td>
+    <td><input type="text" name="email" /></td>
+  </tr>
+  <tr>
     <td>&nbsp;</td>
     <td>
         <input type="submit" name="install" value="Installieren">    </td>
@@ -55,6 +69,14 @@ foreach ( $sql_statements as $sql_statement ) {
     mysql_query($sql_statement);
 	}
 }
+$username = $_POST['user'];
+$passwort2 = md5($_POST['pw']);
+$email = $_POST['email'];
+$eintrag = sprintf("INSERT INTO user (username, password, email, admin) VALUES ('%s', '%s', '%s', 1)",
+            mysql_real_escape_string($username),
+            mysql_real_escape_string($passwort2),
+            mysql_real_escape_string($email)
+);
 echo '<h4 class="alert_success">Installation wurde erfolgreich gel&ouml;scht!</h4>';
 }
 ?>
