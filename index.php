@@ -126,7 +126,7 @@ if(empty($_GET['page'])) {$pa = 'login'; }else{ $pa = $_GET['page']; }
 ?>
 		<footer>
 			<hr />
-			<p><strong>Copyright &copy; 2012 <a href="http://mave1993.de">Mave1993.de</a></strong></p>
+			<p><strong>Copyright &copy; 2012 <a href="http://mave1993.de">Mave1993.de</a></strong><!-- Strafrechtliche verfolgung bei unerlaubten entfernen des Copyrights! --></p>
 			<p>Theme by <a href="http://www.medialoot.com">MediaLoot</a></p>
 		</footer>
 	</aside><!-- end of sidebar -->
