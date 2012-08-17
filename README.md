@@ -2,11 +2,9 @@ Installation:
 ----------------------------------
 1. include/config.php anpassen
 2. http://deineurl.de/install.php aufrufen!
-3. install.php und install.sql löschen oder umbenennen!
+3. Admin Username, Passwort und E-Mail festlegen
+4. install.php und install.sql löschen oder umbenennen!
 
-Login erfolgt mit
-Username: admin
-Passwort: test
 
 
 Konfiguration - Stunden / Minuten:
