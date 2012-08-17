@@ -40,7 +40,7 @@ $menge2 = mysql_num_rows(mysql_query($result));
 if($menge == 0 AND $menge2 == 0)
     {
 
-$eintrag = sprintf("INSERT INTO user (username, password, email, admin, b_email, b_sms, handy) VALUES ('%s', '%s', '%s', 0, 1, 0, '%s')",
+$eintrag = sprintf("INSERT INTO user (username, password, email, admin, handy) VALUES ('%s', '%s', '%s', 0, '%s')",
             mysql_real_escape_string($username),
             mysql_real_escape_string($passwort2),
             mysql_real_escape_string($email),
@@ -54,7 +54,7 @@ $mail['text_regist'] = str_replace("{pw}", $passwort, $mail['text_regist']);
 mail($email, $mail['betreff_regist'], $mail['text_regist'], "From: $absendername <$absendermail>");
     if($eintragen == true)
         {
-echo '<h4 class="alert_success">Die Registrierung war erfolgreich! Du hast eine E-Mail mit deinem Passwort erhalten, dies kannst du im Userbereich ändern! - <a href="index.php">Zum Login</a></h4>';
+echo '<h4 class="alert_success">Die Registrierung war erfolgreich! Du hast eine E-Mail mit deinem Passwort erhalten, dies kannst du im Userbereich ï¿½ndern! - <a href="index.php">Zum Login</a></h4>';
         }
     else
         {
