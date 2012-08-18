@@ -74,7 +74,7 @@ echo '<h4 class="alert_info">Bitte Logge dich zuerst ein!</h4>';
 	</footer>
 </form>
 <footer id="main">
-  <a href="http://wwww.cssjunction.com">Simple Login Form (HTML5/CSS3 Coded) by CSS Junction</a> | <a href="http://www.premiumpixels.com">PSD by Premium Pixels</a>
+  <a href="http://www.cssjunction.com">Simple Login Form (HTML5/CSS3 Coded) by CSS Junction</a> | <a href="http://www.premiumpixels.com">PSD by Premium Pixels</a>
 </footer>
 </secion>
 </body>
