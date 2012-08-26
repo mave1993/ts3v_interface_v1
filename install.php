@@ -77,6 +77,12 @@ $eintrag = sprintf("INSERT INTO user (username, password, email, admin) VALUES (
             mysql_real_escape_string($passwort2),
             mysql_real_escape_string($email)
 );
-echo '<h4 class="alert_success">Installation wurde erfolgreich gel&ouml;scht!</h4>';
+if(mysql_query($eintrag))
+{
+echo '<h4 class="alert_success">User erfolgreich angelegt!</h4>';
+}else{
+echo '<h4 class="alert_error">Fehler beim anlegen des Users!!</h4>';
+}
+echo '<h4 class="alert_success">Installation wurde erfolgreich durchgef&uuml;hrt!</h4>';
 }
 ?>
