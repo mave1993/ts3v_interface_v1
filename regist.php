@@ -11,6 +11,49 @@
 
 <body>
 	<section id="main" class="column"><?php
+	if($_GET['debug'] == "on")
+	{
+	echo '<h4 class="alert_info"><b>DEBUG MODE ON</b><br />';
+if(function_exists('ImageCreateFromPNG')) {
+echo "ImageCreateFromPNG function is enabled<br />";
+}
+else {
+echo "ImageCreateFromPNG is not enabled<br />";
+}
+
+if(function_exists('ImageColorAllocate')) {
+echo "ImageColorAllocate function is enabled<br />";
+}
+else {
+echo "ImageColorAllocate is not enabled<br />";
+}
+
+if(function_exists('imagettftext')) {
+echo "imagettftext function is enabled<br />";
+}
+else {
+echo "imagettftext is not enabled<br />";
+}
+
+if(function_exists('imagepng')) {
+echo "imagepng function is enabled<br />";
+}
+else {
+echo "imagepng is not enabled<br />";
+}
+
+if(function_exists('imagedestroy')) {
+echo "imagedestroy function is enabled<br />";
+}
+else {
+echo "imagedestroy is not enabled<br />";
+}
+
+	echo '</h4>';
+	
+	}
+	
+	
 if($_POST['regist'])
 {
 
