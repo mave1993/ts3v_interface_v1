@@ -1,5 +1,5 @@
 <?php
-$timestamp = time();
+$timestamp = time();include("include/mysqlcon.php");
 
 $abfrage = "SELECT * FROM leih";
 $ergebnis = mysql_query($abfrage);
