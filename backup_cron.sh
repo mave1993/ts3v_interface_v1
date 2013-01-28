@@ -3,13 +3,10 @@
 echo "\n\n\n\n\n";
 echo "Cron File Ts3 Verleih Interface\n";
 echo "Created and Copyright by Patrick Hassmann\n\n";
-include("include/mysqlcon.php");
- include("include/functions.php");
- include("include/ts3admin.class.php");
-
-
-
 $timestamp = time();
+include("include/mysqlcon.php");
+
+
 $abf5 = "SELECT * FROM leih";
 $erg5 = mysql_query($abf5);
 while($row = mysql_fetch_object($erg5))
